@@ -55,3 +55,9 @@ header {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
+
+.intro {
+  margin: 200px auto 0 auto;
+  width: 450px;
+  text-align: left;
+}
