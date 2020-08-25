@@ -8,13 +8,11 @@ body {
   display: flex;
   color: rgb(240, 255, 255);
 }
-.wrapper {
-  max-width: 42em;
-}
+
 
 /* header */
-header {
-  margin-bottom: 2rem;
+.header {
+  margin-bottom: 16rem;
 }
 .username {
   margin-bottom: 0;
@@ -48,14 +46,6 @@ header {
 }
 
 /* main */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
-
 .intro {
   margin: 200px auto 0 auto;
   width: 450px;
