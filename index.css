@@ -12,7 +12,7 @@ body {
 
 /* header */
 .header {
-  margin-bottom: 16rem;
+  height: 69px;
 }
 .username {
   margin-bottom: 0;
@@ -47,7 +47,7 @@ body {
 
 /* main */
 .intro {
-  margin: 200px auto 0 auto;
-  width: 450px;
+  margin: 5rem auto 5rem auto;
+  width: 31rem;
   text-align: left;
 }
