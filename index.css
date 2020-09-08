@@ -26,7 +26,8 @@ body {
 }
 .header-nav .nav-link:hover,
 .header-nav .nav-link:focus {
-  border-bottom-color: rgba(240, 255, 255, .5);
+  color: rgb(240, 255, 255);
+  border-bottom-color: rgb(240, 255, 255);
 }
 .header-nav .nav-link + .nav-link {
   margin-left: 1rem;
