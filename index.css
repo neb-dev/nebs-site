@@ -6,7 +6,7 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 body {
-  color: rgb(240, 255, 255);
+  color: ghostwhite;
 }
 
 
@@ -46,17 +46,34 @@ body {
   }
 }
 
+/* site heading*/
+.name {
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+.title {
+  letter-spacing: 1px;
+}
+
 /* main */
 .intro {
   margin: 5rem auto 5rem auto;
-  width: 31rem;
+  width: 34rem;
   text-align: left;
 }
 
 .cards {
   background-color: #27293D;
-  width: 16rem;
+  width: 18rem;
   margin: auto;
+}
+
+.card-body {
+  /* background-color: rgba(39, 232, 167, .1); */
+}
+
+.heading {
+  color: #27e8a7;
 }
 
 /* footer */
