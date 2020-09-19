@@ -58,7 +58,7 @@ body {
 /* main */
 .intro {
   margin: 5rem auto 5rem auto;
-  width: 34rem;
+  max-width: 34rem;
   text-align: left;
 }
 
