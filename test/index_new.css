@@ -1,21 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
-  height: auto;
-  width: auto;
   background-color: #1e1e2f;
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-  font-family: 'Fira Code', monospace;
+
+  font-family: 'Noto Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
   line-height: 1.5;
   font-size: 16px;
-  color: #cecece;
+  color: #e0e0e0;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
-  color: #cecece;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 24px;
+  max-width: 750px;
 }
 
 nav ul {
@@ -27,65 +33,209 @@ nav ul {
   list-style: none;
 }
 
-nav ul li a {
-  font-size: 18px;
+.fira-code-nav-link {
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
   color: #e0e0e0;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
   padding: 1rem 0;
 }
-
-nav ul li a:hover {
+.fira-code-nav-link:hover {
   color: #27e8a7;
+}
+
+header {
+  margin: 4px 0 8px 0;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.permanent-marker-heading {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-size: 48px;
+  color: #27e8a7;
+}
+.permanent-marker-sub-heading {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  color: #7fb7ff;
 }
 
 main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
+
 .noto-sans-paragraph {
   font-family: 'Noto Sans', sans-serif;
   font-variation-settings: 'wdth' 100;
   font-size: 16px;
+  line-height: 1.25;
 }
 
-.noto-sans-sub-heading {
+.noto-sans-section-heading {
   font-family: 'Noto Sans', sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-size: 24px;
-  font-style: normal;
   font-variation-settings: 'wdth' 100;
+  margin-bottom: 10px;
 }
 
-.fira-code-heading {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.fira-code-sub-heading {
-  font-size: 24px;
+.fira-code-section-heading {
+  font-family: 'Fira Code', monospace;
   font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.fira-code-paragraph {
+.about-card {
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  margin-top: 16px;
+  background-color: #353552;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.exp-section {
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #353552;
+  padding: 16px;
+  border-radius: 16px;
+}
+.exp-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.exp-card ul {
+  list-style: disc;
+  margin-left: 18px;
+}
+.exp-card li {
+  margin: 4px 0;
   font-size: 16px;
-  font-weight: 300;
 }
-
-.permanent-marker-regular {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 48px;
+.exp-title {
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
   color: #27e8a7;
 }
-
-.permanent-marker-regular2 {
-  font-family: 'Permanent Marker', cursive;
+.exp-date {
+  font-family: 'Fira Code', monospace;
   font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
+  font-size: 16px;
+  color: #7fb7ff;
+}
+
+.edu-section {
+  width: 100%;
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  background-color: #353552;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.edu-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 12px;
+}
+.edu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 16px;
+}
+.edu-title {
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: #27e8a7;
+}
+.edu-address {
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
+  font-size: 16px;
+  color: #7fb7ff;
+}
+
+.edu-date {
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.projects-section {
+  width: 100%;
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  background-color: #353552;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.project-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 16px;
+  gap: 4px;
+}
+.project-title {
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 4px;
+  color: #27e8a7;
+}
+.project-description {
+  font-family: 'Fira Code', monospace;
+  font-weight: 300;
+  font-size: 16px;
+}
+.project-link a {
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  color: #e0e0e0;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+
+  text-decoration: underline;
+  align-self: flex-end;
+}
+.project-link a:hover {
   color: #7fb7ff;
 }

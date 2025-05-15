@@ -3,14 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="index_new.css" />
     <title>nebs-site</title>
@@ -19,39 +17,140 @@
     <nav>
       <ul>
         <li><a class="fira-code-nav-link" href="#about">About</a></li>
-        <li><a class="fira-code-nav-link" href="#experience">Experience</a></li>
+        <li>
+          <a class="fira-code-nav-link" href="#experience">Experience</a>
+        </li>
         <li><a class="fira-code-nav-link" href="#education">Education</a></li>
         <li><a class="fira-code-nav-link" href="#projects">Projects</a></li>
       </ul>
     </nav>
     <header>
       <div>
-        <div class="permanent-marker-regular">Joshua Nebeker</div>
-        <div class="permanent-marker-regular2">Software Engineer</div>
+        <div class="permanent-marker-heading">Joshua Nebeker</div>
+        <div class="permanent-marker-sub-heading">Software Engineer</div>
       </div>
     </header>
     <main>
-      <div>
-        <div id="about" class="noto-sans-sub-heading">About</div>
+      <div class="about-card">
+        <div id="about" class="fira-code-section-heading">About</div>
         <div class="noto-sans-paragraph">
-          Motivated software engineer with 3.5 years of experience and a strong
-          foundation in web development and design. Experienced in creating
-          efficient web scrapers, implementing observability tools, and
-          delivering high-quality front-end and back-end solutions using React,
-          Ruby on Rails, and Node.
+          Motivated and determined software engineer with 3.5 years of solid
+          experience in web development. Proficient in building scalable
+          back-end services, pixel-perfect front-end interfaces, fast and
+          reliable web automation scripts, and observability tool
+          implementations. Experienced in delivering full-stack solutions with
+          TypeScript/JavaScript, Ruby on Rails, and Node.js.
         </div>
       </div>
 
-      <div>
-        <div id="experience" class="noto-sans-sub-heading">Experience</div>
+      <div class="exp-section">
+        <div id="experience" class="fira-code-section-heading">Experience</div>
+        <div class="exp-cards">
+          <div class="exp-card">
+            <div class="exp-title">
+              Software Engineer - MX Technologies Inc.
+            </div>
+            <div class="exp-date">AUGUST 2021 - JANUARY 2025</div>
+            <ul>
+              <li class="noto-sans-paragraph">
+                Built and maintained fast, reliable web automation scripts for
+                legacy and modern applications. Aggregated financial data from
+                leading financial institutions.
+              </li>
+              <li class="noto-sans-paragraph">
+                Implemented observability tools (OpenTelemetry, and Datadog) in
+                Node.js and Ruby on Rails apps. Wrote extensive documentation,
+                created dashboards and alerts, and integrated incident
+                notifications into company communication channels.
+              </li>
+              <li class="noto-sans-paragraph">
+                Built and maintained front-end and back-end features for an
+                analytics suite using Ruby on Rails and React. Analyzed data in
+                AWS and GCP to identify problems and deliver fixes or
+                optimizations. Ensured app reliability through E2E and unit test
+                coverage with RSpec, Cypress, Vitest, and Playwright.
+              </li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">
+              Chat Support Specialist - Vivint Smart Home
+            </div>
+            <div class="exp-date">JULY 2020 - AUGUST 2021</div>
+            <ul>
+              <li class="noto-sans-paragraph">
+                Troubleshot security systems, and legacy/modern equipment,
+                including sensors and cameras. Delivered excellent customer
+                service by prioritizing tasks effectively and resolving every
+                issue.
+              </li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">
+              Intern Software Engineer - We Care Insurance
+            </div>
+            <div class="exp-date">APRIL 2020 - JULY 2020</div>
+            <ul>
+              <li class="noto-sans-paragraph">
+                Developed a web automation script for an insurance brokerage to
+                automate quote generation across various insurance sectors.
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <div id="education" class="noto-sans-sub-heading">Education</div>
+      <div class="edu-section">
+        <div id="education" class="fira-code-section-heading">Education</div>
+        <div class="edu-cards">
+          <div class="edu-card">
+            <div class="edu-title">
+              Bachelor of Science, Web Development and Design
+            </div>
+            <div class="edu-address">Utah Valley University, Orem, UT</div>
+            <div class="edu-date">2016 – 2020</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-title">
+              Associate of Science, Software Development
+            </div>
+            <div class="edu-address">ITT Technical Institute, Murray, UT</div>
+            <div class="edu-date">2014 – 2015</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-title">Certificate, Advanced Composites</div>
+            <div class="edu-address">
+              Mountainland Applied Technology College, American Fork, UT
+            </div>
+            <div class="edu-date">2011 – 2013</div>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <div id="projects" class="noto-sans-sub-heading">Projects</div>
+      <div class="projects-section">
+        <div id="projects" class="fira-code-section-heading">Projects</div>
+        <div class="project-cards">
+          <div class="project-card">
+            <div class="project-title">TypeScript</div>
+            <div class="project-description">
+              This is a collection of TypeScript code examples and patterns I've used in previous projects. 
+            </div>
+            <div class="project-link">
+              <a class="fira-code-nav-link-github" href="https://github.com/neb-dev/typescript">-> GitHub</a>
+            </div>
+          <div>
+            
+          <div class="project-card">
+            <div class="project-title">TypeScript</div>
+            <div class="project-description">
+              This is a collection of TypeScript code examples and patterns I've used in previous projects. 
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/neb-dev/typescript">-> GitHub</a>
+            </div>
+          <div>
+        </div>
       </div>
     </main>
     <footer><div>nebs-site v1.1 &copy;2025</div></footer>
