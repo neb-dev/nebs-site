@@ -33,6 +33,17 @@ nav ul {
   list-style: none;
 }
 
+header {
+  margin: 4px 0 8px 0;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .fira-code-nav-link {
   font-family: 'Fira Code', monospace;
   font-size: 16px;
@@ -47,15 +58,35 @@ nav ul {
   color: #27e8a7;
 }
 
-header {
-  margin: 4px 0 8px 0;
+.active {
+  color: #7fb7ff;
 }
-header div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+@media (max-width: 600px) {
+  body {
+    padding: 16px;
+    padding-top: 0px;
+  }
+  .fira-code-nav-link {
+    font-size: 14px;
+  }
+  header {
+    margin-top: 0px;
+  }
 }
+
+@media (max-width: 345px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  nav {
+    margin-bottom: 16px;
+  }
+}
+
 .permanent-marker-heading {
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
@@ -100,7 +131,7 @@ main {
 }
 
 .about-card {
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.3);
   margin-top: 16px;
   background-color: #353552;
   padding: 16px;
@@ -108,7 +139,7 @@ main {
 }
 
 .exp-section {
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,7 +179,7 @@ main {
 
 .edu-section {
   width: 100%;
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.3);
   background-color: #353552;
   padding: 16px;
   border-radius: 16px;
@@ -191,7 +222,7 @@ main {
 
 .projects-section {
   width: 100%;
-  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.3);
   background-color: #353552;
   padding: 16px;
   border-radius: 16px;
@@ -202,7 +233,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: start;
-  gap: 16px;
+  gap: 12px;
 }
 .project-card {
   display: flex;
@@ -224,6 +255,9 @@ main {
   font-weight: 300;
   font-size: 16px;
 }
+.project-link {
+  align-self: flex-end;
+}
 .project-link a {
   font-family: 'Fira Code', monospace;
   font-size: 16px;
@@ -232,10 +266,17 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
-
-  text-decoration: underline;
   align-self: flex-end;
 }
 .project-link a:hover {
   color: #7fb7ff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
 }
