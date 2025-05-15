@@ -1,229 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>nebs-site</title>
   </head>
-  <body class="text-center">
-    <div class="container">
-      <div class="header mb-5">
-        <h4 class="username">neb-dev</h3>
-        <nav class="nav header-nav justify-content-center">
-          <a class="nav-link" href="#intro">About</a>
-          <a class="nav-link" href="#projects">Projects</a>
-          <a class="nav-link" href="#resume">Experience</a>
-        </nav>
+  <body>
+    <nav>
+      <ul>
+        <li><a class="fira-code-nav-link" href="#about">About</a></li>
+        <li>
+          <a class="fira-code-nav-link" href="#experience">Experience</a>
+        </li>
+        <li><a class="fira-code-nav-link" href="#education">Education</a></li>
+        <li><a class="fira-code-nav-link" href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <header>
+      <div>
+        <div class="permanent-marker-heading">Josh Nebeker</div>
+        <div class="permanent-marker-sub-heading">Software Engineer</div>
       </div>
-      
-      <main class="pt-5">
-        <div class="site-heading mt-5 pb-5">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="display-3 name">Josh Nebeker</h1>
-              <h2 class="text-muted title">Web Developer & Designer</h2>
+    </header>
+    <main>
+      <div class="about-card">
+        <div id="about" class="fira-code-section-heading">About</div>
+        <div class="noto-sans-paragraph">
+          I’m a professional software engineer with a focus on full-stack
+          development. I’m experienced using a variety of frontend JavaScript
+          frameworks, Express (Node.js), and most recently Ruby on Rails. I have
+          a strong passion for TypeScript. I enjoy building scalable back-end
+          services, RESTful APIs, and clean UIs. I am committed to always
+          learning more, writing better code, and finding new patterns in
+          programming. I will be posting my personal projects here as my
+          expertise continues to grow.
+        </div>
+      </div>
+
+      <div class="exp-section">
+        <div id="experience" class="fira-code-section-heading">Experience</div>
+        <div class="exp-cards">
+          <div class="exp-card">
+            <div class="exp-title">
+              Software Engineer - MX Technologies Inc.
+            </div>
+            <div class="exp-date">AUGUST 2021 - JANUARY 2025</div>
+            <ul>
+              <li class="noto-sans-paragraph">
+                Built and maintained fast, reliable web automation scripts for
+                legacy and modern applications. Aggregated financial data from
+                leading financial institutions.
+              </li>
+              <li class="noto-sans-paragraph">
+                Implemented observability tools (OpenTelemetry, and Datadog) in
+                Node.js and Ruby on Rails apps. Wrote extensive documentation,
+                created dashboards and alerts, and integrated incident
+                notifications into company communication channels.
+              </li>
+              <li class="noto-sans-paragraph">
+                Built and maintained front-end and back-end features for an
+                analytics suite using Ruby on Rails and React. Analyzed data in
+                AWS and GCP to identify problems and deliver fixes or
+                optimizations. Ensured app reliability through E2E and unit test
+                coverage with RSpec, Cypress, Vitest, and Playwright.
+              </li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">
+              Chat Support Specialist - Vivint Smart Home
+            </div>
+            <div class="exp-date">JULY 2020 - AUGUST 2021</div>
+            <ul>
+              <li class="noto-sans-paragraph">
+                Troubleshot security systems, and legacy/modern equipment,
+                including sensors and cameras. Delivered excellent customer
+                service by prioritizing tasks effectively and resolving every
+                issue.
+              </li>
+            </ul>
+          </div>
+          <div class="exp-card">
+            <div class="exp-title">
+              Intern Software Engineer - We Care Insurance
+            </div>
+            <div class="exp-date">APRIL 2020 - JULY 2020</div>
+            <ul>
+              <li class="noto-sans-paragraph">
+                Developed a web automation script for an insurance brokerage to
+                automate quote generation across various insurance sectors.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="edu-section">
+        <div id="education" class="fira-code-section-heading">Education</div>
+        <div class="edu-cards">
+          <div class="edu-card">
+            <div class="edu-title">
+              Bachelor of Science, Web Development and Design
+            </div>
+            <div class="edu-address">Utah Valley University, Orem, UT</div>
+            <div class="edu-date">2016 – 2020</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-title">
+              Associate of Science, Software Development
+            </div>
+            <div class="edu-address">ITT Technical Institute, Murray, UT</div>
+            <div class="edu-date">2014 – 2015</div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-title">Certificate, Advanced Composites</div>
+            <div class="edu-address">
+              Mountainland Applied Technology College, American Fork, UT
+            </div>
+            <div class="edu-date">2011 – 2013</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-section">
+        <div id="projects" class="fira-code-section-heading">Projects</div>
+        <div class="project-cards">
+          <div class="project-card">
+            <div class="project-title">TypeScript</div>
+            <div class="project-description">
+              This is a collection of TypeScript code examples and patterns I've
+              used in previous projects.
+            </div>
+            <div class="project-link">
+              <a
+                class="fira-code-nav-link-github"
+                href="https://github.com/neb-dev/typescript"
+                >-> GitHub</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-title">TypeScript</div>
+            <div class="project-description">
+              This is a collection of TypeScript code examples and patterns I've
+              used in previous projects.
+            </div>
+            <div class="project-link">
+              <a href="https://github.com/neb-dev/typescript">-> GitHub</a>
             </div>
           </div>
         </div>
-        
-        
-        <div class="intro" id="intro">
-          <div class="row">
-            <div class="col-12">
-              <p class="lead font-italic">Welcome to my portfolio.</p>
-              <p class="lead">After recently graduating from Utah Valley University with a Bachelor of Science in Web and App
-                Development, I am actively seeking a position that uses my knowledge and ability in Full Stack Software
-                Development and Design.</p>
-              <p class="lead">Enjoy.</p>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="projects mb-5" id="projects">
-          <div class="row mb-2">
-            <div class="col-12">
-              <p class="h2 text-left heading">Projects</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">React Native</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Mobile App</h6>
-                  <p class="card-text">Featuring Google Events, Issuu Publications, and Shopify Merch.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/encircle-app" target="_blank" class="card-link">Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">React App</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">WC3 Data</h6>
-                  <p class="card-text">A nice site containing info about Warcraft III units.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/react-warcraft" target="_blank" class="card-link">Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Firebase App</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Gift List</h6>
-                  <p class="card-text">An app I built for creating Gift Lists.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/firebase-app" target="_blank" class="card-link">Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">JavaScript</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Vanilla Examples</h6>
-                  <p class="card-text">Just some good ol' vanilla JS scripts.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/DGM2760" target="_blank" class="card-link">Code</a>
-                </div>
-              </div>
-            </div>
-          
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">GraphQL API</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Realm Roster</h6>
-                  <p class="card-text">A sick CRUD API for managing a MongoDB Cluster.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/primsa-front" target="_blank" class="card-link">Front Code</a>
-                  <a href="https://github.com/neb-dev/graphql-back" target="_blank" class="card-link">Back Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Node API</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Realm Roster</h6>
-                  <p class="card-text">An effective Node API for managing a MongoDB Cluster.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/primsa-front" target="_blank" class="card-link">Front Code</a>
-                  <a href="https://github.com/neb-dev/node-back" target="_blank" class="card-link">Back Code</a>
-                </div>
-              </div>
-            </div>
-          
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Prisma API</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Realm Roster</h6>
-                  <p class="card-text">Featuring a Docker Container and Apollo Server.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/prisma-api" target="_blank" class="card-link">Back Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">PHP</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">CMS</h6>
-                  <p class="card-text">A blog site with moderating!</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/josh-php/tree/master/PHP%20Midterm" target="_blank" class="card-link">Code</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
-              <div class="card cards mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Selenium Web Driver</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Quote Generator</h6>
-                  <p class="card-text">Featuring ChromeDriver and JDBC.</p>
-                  <!-- <a href="#" target="_blank" class="card-link">Demo</a> -->
-                  <a href="https://github.com/neb-dev/WebAutomation" target="_blank" class="card-link">Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="resume pt-5" id="resume">
-          <div class="row mb-2">
-            <div class="col-12">
-              <p class="h2 text-left heading">Experience</p>
-            </div>
-          </div>
-
-          <div class="experience">
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="card job mb-4">
-                  <div class="card-body">
-                    <h1 class="display-4">Vivint Smart Home</h1>
-                    <h3 class="text-muted">Advanced Technical Support Specialist</h3>
-                    <p class="card-text">Troubleshoot security panels, sensors, thermostats, cameras, and networks. Provision
-                      equipment, process shipments, and schedule work orders. Incorporate AAA into every call and
-                      provide excellent customer service through prioritizing and addressing customer needs.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="experience mb-4">
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="card job mb-4">
-                  <div class="card-body">
-                    <h1 class="display-4">Encircle</h1>
-                    <h3 class="text-muted">Mobile App Developer</h3>
-                    <p class="card-text">Developed and designed a mobile app using React Native and existing APIs (Google Calendar,
-                      Issuu, Shopify) to supply access to the organization’s resources, events, and information.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="experience mb-4">
-            <div class="row mb-4">
-              <div class="col-12">
-                <div class="card job mb-4">
-                  <div class="card-body">
-                    <h1 class="display-4">We Care Insurance</h1>
-                    <h3 class="text-muted">Intern Software Engineer</h3>
-                    <p class="card-text">Developed a back-end automation program using PHP, Java, and Selenium WebDriver to create
-                      and store home insurance quotes in a MySQL database.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-
-
-      <footer class="mt-auto pt-5">
-        <p class="text-muted">nebs-site v1.0 &copy;2020</p>
-      </footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      </div>
+    </main>
+    <footer><div>nebs-site v1.1 &copy;2025</div></footer>
   </body>
 </html>
